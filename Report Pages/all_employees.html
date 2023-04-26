@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Panel |</title>
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="../Styles/all_employees.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <p><img src="../Images/iti-logo.png" id="logo" ></p>
+        <a class="navbar-brand" href="../Pages/admin_panel.html">Admin <span class="text-success">Panel</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="../Report Pages/all_employees.html">All Employees <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Report Pages/pendding_employees.html">Pendding Employees</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Reports
+                    </a>
+                    <div class="dropdown-menu btn-dark" id="dropdown" aria-labelledby="navbarDropdown">
+                        <a class="nav-link" href="../Report Pages/full_report.html">Full Report</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="nav-link" href="../Report Pages/late_report.html">Late Report</a>
+                        <a class="nav-link" href="../Report Pages/absence_report.html">Absence Report</a>
+                    </div>
+                </li>
+
+            </ul>
+            <label for="username" class="form-label text-light mr-5"><span><i class="fa fa-user"></i></span><span
+                    id="adminname">admin</span></label>
+            <!-- <a class="btn btn-outline-success mr-5" href="login.html">Logout <span class="text-danger"><i class="fa fa-sign-in"></i></a> -->
+            <button class="btn btn-outline-success mr-5" id="logout">Logout <span class="text-danger"><i
+                        class="fa fa-sign-in"></i></button>
+        </div>
+    </nav>
+    <div class="container-fluid" id="mainwrapper">
+        <div class="row" id="upperwraper">
+            <div class="col-10 p-5" id="loginsection">
+                <p class="lead text-center mb-4"><span class="text-success"><i class="fa fa-users"></i></span> All
+                    Employees</p>
+                <div
+                    class="table-responsive table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl">
+                    <table class="table table-hover" id="mytable">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Age</th>
+                                <th scope="col">username</th>
+                                <th scope="col">password</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="../Jquery/jquery-3.6.3.min.js"></script>
+    <script src="../Bootstrap/bootstrap.min.js"></script>
+    <script src="../Bootstrap/popper.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+    <script src="../Scripts/all_employees.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile |</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Styles/empolyee_profile.css">
+</head>
+
+<body>
+    <div class="container" style="margin-top: 20px;">
+        <div class="main-body">
+            <div class="row gutters-sm">
+                <div class="col-md-12">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="row">
+                                <h4 class="d-flex align-items-center mb-3"><i
+                                    class="material-icons text-danger mr-2">Employee&nbsp;</i>Info</h4>
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Username</h6>
+                                </div>
+                                <div id="username" class="col-sm-9 text-secondary">
+                                    username
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">First Name</h6>
+                                </div>
+                                <div id="firstname" class="col-sm-9 text-secondary">
+                                    firstname
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Last Name</h6>
+                                </div>
+                                <div id="lastname" class="col-sm-9 text-secondary">
+                                    lastname
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Email</h6>
+                                </div>
+                                <div id="email" class="col-sm-9 text-secondary">
+                                    email
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Address</h6>
+                                </div>
+                                <div id="address" class="col-sm-9 text-secondary">
+                                    address
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Age</h6>
+                                </div>
+                                <div id="age" class="col-sm-9 text-secondary">
+                                    Age
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="row gutters-sm">
+                        <div class="col-sm-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h4 class="d-flex align-items-center mb-3"><i
+                                            class="material-icons text-danger mr-2">Daily&nbsp;</i>Report</h4>
+                                    <label for="day">Day:</label>
+                                    <input type="date" id="day">
+                                    <br><br>
+                                    <h5 class="text-primary">Today Date:</h5>
+                                    <div class="">
+                                        <input type="text" id="todaydate" value=""
+                                            class="form-control  mb-2 text-dark  " disabled>
+                                    </div>
+                                    <h5 class="text-primary">Attendance Time:</h5>
+                                    <div class="">
+                                        <input type="text" id="attime" value="" class="form-control  mb-2 text-dark  "
+                                            disabled>
+                                    </div>
+                                    <h5 class="text-primary">Leave Time:</h5>
+                                    <div class="">
+                                        <input type="text" id="leavetime" value=""
+                                            class="form-control  mb-2 text-dark  " disabled>
+                                    </div>
+                                    <h5 class="text-primary">Attendance Status:</h5>
+                                    <div class="">
+                                        <input type="text" id="status" value="" class="form-control  mb-2 text-dark  "
+                                            disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h4 class="d-flex align-items-center mb-3"><i
+                                            class="material-icons text-danger mr-2">Monthly&nbsp;</i>Report</h4>
+                                    <label for="from">From:</label>
+                                    <input type="date" id="fromdate">
+                                    <label for="from">To:</label>
+                                    <input type="date" id="todate">
+                                    <br><br>
+                                    <h5 class="text-primary">Attendance Times:</h5>
+                                    <div class="">
+                                        <input type="text" id="attimes" value="" class="form-control  mb-2 text-dark  "
+                                            disabled>
+                                    </div>
+                                    <h5 class="text-primary">Late Times:</h5>
+                                    <div class="">
+                                        <input type="text" id="lates" value="" class="form-control  mb-2 text-dark  "
+                                            disabled>
+                                    </div>
+                                    <h5 class="text-primary">Absencet Times:</h5>
+                                    <div class="">
+                                        <input type="abcent" id="abscs" value="" class="form-control  mb-2 text-dark  "
+                                            disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Jquery/jquery-3.6.3.min.js"></script>
+    <script src="../Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../Scripts/empolyee_profile.js"></script>
+</body>
+
+</html>

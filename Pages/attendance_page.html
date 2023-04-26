@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance |</title>
+
+    <!-- stylesheet libs-->
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="../Styles/attendance_page.css">
+</head>
+
+<body>
+    <div class="container-fluid" id="mainwrapper">
+        <div class="row" id="upperwraper">
+            <div class="col-10 col-md-8 col-lg-4 p-5" id="loginsection">
+                <p class="lead text-center">
+                    <span class="text-success">
+                        <i class="fa fa-pencil"></i>
+                    </span> Register Your Attendance</p>
+                <form method="POST" id="confirmattendance">
+                    <div class="input-group mb-3">
+                        <span class="input-group-prepend ">
+                            <i class="input-group-text fa fa-user" id="pen"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="username" name="username" id="username"
+                            required>
+                    </div>
+                    <label for="username" class="form-label text-danger" id="invalidusername">invalid username</label>
+                    <button type="submit" class="btn btn-primary form-control mb-3" id="confirmattendance">Confirm
+                        Attendance</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Jquery/jquery-3.6.3.min.js"></script>
+    <script src="../Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../Scripts/Attendance.js"></script>
+</body>
+
+</html>

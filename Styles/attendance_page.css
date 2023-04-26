@@ -1,0 +1,56 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#mainwrapper {
+    height: 100vh;
+    background-image: url("../Images/notebook-natural-laptop-macbook.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#upperwraper {
+    height: 100%;
+    background-color: black;
+    opacity: .7;
+}
+
+#loginsection {
+    margin: 90px auto;
+    background-color: white;
+    height: 295px;
+    border-radius: 20px;
+    transition: 1.5s;
+    overflow: auto;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+   
+}
+
+#pen{
+    height:37px;
+}
+
+#invalidpassword,
+#invalidusername {
+    display: none;
+}
+
+#footer {
+    background-color: #0e0e0e;
+    color: white;
+    height: 50px;
+    margin-top: 25px;
+}
+
+#footer p {
+    margin-top: 10px;
+}
+
+#footer p a {
+    font-family: system-ui;
+    text-decoration: none;
+}
